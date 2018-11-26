@@ -12,7 +12,7 @@ export class AppComponent {
   public cards: Array<any> = [];
 
   constructor(private cardService: CardServiceService) {
-    cardService.get().subscribe((cards: any) => this.cards = cards);
+    // cardService.get().subscribe((cards: any) => this.cards = cards);
   }
 
   addCard(cardText) {

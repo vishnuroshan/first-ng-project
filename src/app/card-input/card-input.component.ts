@@ -8,8 +8,6 @@ import { Component, OnInit, Output, EventEmitter, HostListener } from '@angular/
 export class CardInputComponent implements OnInit {
   // tslint:disable-next-line:no-output-on-prefix
   @Output() onCardAdd = new EventEmitter<string>();
-  @HostListener('document:keypress', ['$event'])
-
   public newCard: any = { text: '' };
   constructor() { }
 
