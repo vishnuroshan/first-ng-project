@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CardServiceService } from '../app/card-service.service';
 
 @Component({
   selector: 'app-root',
@@ -11,8 +10,7 @@ export class AppComponent {
 
   public cards: Array<any> = [];
 
-  constructor(private cardService: CardServiceService) {
-    // cardService.get().subscribe((cards: any) => this.cards = cards);
+  constructor() {
   }
 
   addCard(cardText) {
